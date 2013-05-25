@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import url("../webfonts/Eurostile_Reg/stylesheet.css");
+@import url("../webfonts/Eurostile_RegObl/stylesheet.css");
+html, body {
+    height: 100%;
+    padding-top: 100px;
+}
+/*
+body {
+	background-color: #333333;
+}
+*/
+body {
+	width: 100%;
+	background: #333333;
+	overflow-x: hidden;
+/*
+	overflow-y: hidden;
+*/
+	overflow-y: auto;
+}
+
+
+.container {
+	background-color: #f6f6f6;
+	padding-top: 100px;
+    width: 974px;
+    height; 1500px;
+}
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+.content {
+    padding-bottom: 50px;
+}
+#v-branding {
+	background-image: url(../assets/stahl-branding-220.png);
+	width: 220px;
+	height: 180px;
+    margin-bottom: 10px:
+}
+h1 {
+	font-family: Eurostile-Reg;
+	text-align: center;
+	font-size: 3.5em;
+	line-height: 0.85em;
+	margin-top: 20px;
+}
+h3 {
+	font-family: Eurostile-RegObl;
+	text-align: center;
+	font-size: 2em;
+    margin-bottom: 20px;
+}
+.carousel {
+	background-image: url(../assets/stahl-carousel-2a-508.jpg);
+	width: 508px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 243px;
+}
+.nav.nav-stacked {
+	width: 220px;
+	margin-top: 10px;
+}
+.nav.nav-pills.nav-stacked li{
+	height: 37px;
+	margin-bottom: 10px;
+    background-color: transparent;
+	font-family: Eurostile-Reg;
+	font-size: .9em;
+	vertical-align: middle;
+    -webkit-border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 5px 5px 0px;
+    text-indent: 18px;
+    padding-left: 0px;
+    padding-top: 1px;
+    padding-bottom: 0px;
+}
+.nav.nav-stacked li a{
+	padding-left: 0px;
+        margin-top: 0px;
+    margin-bottom: 0px;
+height: 16px;
+        padding-top: 11px;
+    padding-bottom: 10px;
+}
+
+.nav>li>a{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus,
+.nav > li > a:active{
+    text-decoration: none;
+    background-color: #74a0c5;
+    color: #ffffff !important;
+/*
+    padding-top: 8px;
+    padding-bottom: 8px;
+*/
+}
+
+.icon-white {
+    background-image: url(../assets/glyphicons-halflings-white.png);
+}
+.space-below {
+	margin-bottom: 20px;
+}
+.feature-group {
+	margin-top: 10px;
+    margin-bottom: 30px;
+}
+.btn-feature {
+  background-color: hsl(267, 32%, 33%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8867b0", endColorstr="#51396f");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#8867b0), to(#51396f));
+  background-image: -moz-linear-gradient(top, #8867b0, #51396f);
+  background-image: -ms-linear-gradient(top, #8867b0, #51396f);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8867b0), color-stop(100%, #51396f));
+  background-image: -webkit-linear-gradient(top, #8867b0, #51396f);
+  background-image: -o-linear-gradient(top, #8867b0, #51396f);
+  background-image: linear-gradient(#8867b0, #51396f);
+  border-color: #51396f #51396f hsl(267, 32%, 27.5%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.36);
+  -webkit-font-smoothing: antialiased;
+}
+.btn-lightbox {
+  background-color: hsl(0, 0%, 0%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#383838", endColorstr="#000000");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#383838), to(#000000));
+  background-image: -moz-linear-gradient(top, #383838, #000000);
+  background-image: -ms-linear-gradient(top, #383838, #000000);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #383838), color-stop(100%, #000000));
+  background-image: -webkit-linear-gradient(top, #383838, #000000);
+  background-image: -o-linear-gradient(top, #383838, #000000);
+  background-image: linear-gradient(#383838, #000000);
+  border-color: #000000 #000000 hsl(0, 0%, -5.5%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.36);
+  -webkit-font-smoothing: antialiased;
+}
+.bold{
+  font-weight: Bold;
+}
+.lighter{
+  font-weight: Lighter;
+}
+
+.lightbox h1, .lightbox h3, .lightbox p{
+    color: #ffffff !important;
+}
+
+/*
+.lightbox p{
+    color: #ffffff !important;
+}
+*/
+.video iframe {
+    display:block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+.panel-left.feature{
+	visibility:hidden;
+}
+.panel-left.feature:target{
+	visibility:visible;
+	margin-left: 0%;
+	background-color: #fdf4ae;
+    z-index: 50;
+}
+.feature-image img{
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+#v-header{
+	position: absolute;
+	z-index: 100;
+	width: 220px;
+	top: 20px;
+}
+#v-header{
+    background-color:#f6f6f6;
+}
+#navigation {
+	z-index:100;
+}
+.book-image img{
+        box-shadow:0 0 6px #777; 
+    -moz-box-shadow:0 0 6px #777; 
+    -webkit-box-shadow:0 0 6px #777; 
+    margin-bottom: 20px;
+}
+
+.video-container h1 {
+    margin-top: 200 px;
+}
+
+/* NEW STYLES HERE */
+
+.h-header {
+    height: 55px;
+    background-image: url("../assets/stahl-branding-650.png");
+    background-position:center;
+    background-repeat:no-repeat;
+}
+#link-video1 {
+    margin-top: 0 !important;
+}
+.ui-btn-inner {
+    margin-top: 0 !important;
+}
+
+.fluid-container {
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.fluid-container-video{
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+p.video-caption {
+    width: 640px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+li a.active {
+    color: #333333 !important;
+}
+.ui-body-c, .ui-overlay-c{
+    text-shadow: none !important;
+}
+a.btn-success.ui-link {
+    color: #ffffff !important;
+}
+
+/* docs site layout */
+
+@media all and (min-width: 650px){
+	
+    .h-header {
+     display:none;   
+    }
+    
+    
+}
+
+@media all and (max-width: 650px){
+	
+    a #v-branding {
+     display:none;   
+    }
+    
+    
+}
