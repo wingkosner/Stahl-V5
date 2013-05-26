@@ -53,7 +53,7 @@ h3 {
 	font-size: 2em;
     margin-bottom: 20px;
 }
-.carousel {
+.coverflow {
 	background-image: url(../assets/stahl-carousel-2a-508.jpg);
 	width: 508px;
 	margin-left: auto;
@@ -233,11 +233,15 @@ height: 16px;
     margin-left: auto;
     margin-top: 100px;
 }
+.w450 {
+    width: 450px;
+    margin-left: auto;
+	margin-right: auto;
+}
 p.video-caption {
     width: 640px;
     margin-right: auto;
     margin-left: auto;
-
 }
 li a.active {
     color: #333333 !important;
@@ -247,6 +251,19 @@ li a.active {
 }
 a.btn-success.ui-link {
     color: #ffffff !important;
+}
+/*
+a#back-button.btn.ui-link {
+    color: #333333 !important;
+}
+*/
+.email-input {
+    width: 240px;
+    margin-right: auto;
+    margin-left: auto;
+}
+h1.space-above {
+    margin-top: 100px;
 }
 
 /* docs site layout */
@@ -262,7 +279,7 @@ a.btn-success.ui-link {
 
 @media all and (max-width: 650px){
 	
-    a #v-branding {
+    #v-header {
      display:none;   
     }
     
