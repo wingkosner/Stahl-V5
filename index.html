@@ -43,7 +43,7 @@
         
         <div data-role="page" id="home">
             
-
+            <div class="outer-container">
             
             <div data-role="header" class="h-header" data-position="fixed" data-theme="a" data-fullscreen="false">
                 <h1></h1>
@@ -58,57 +58,43 @@
                 <h1>Stahl&rsquo;s Essential Psychopharmacology</h1>
                 <h3> Essential. Trusted. Indispensable.</h3>
                 <div class="coverflow"></div>
-                <div class="row">
-                    <div class="span9">
+                <div class="text-container">
                         <p><em>Stahl&rsquo;s Essential Psychopharmacology</em> is a suite of products that began some 20 years ago as a published offshoot of Dr. Stahl’s lectures about disease mechanisms and drug actions. Consisting of not only a range of books but also an online service, a journal, and related CME, it is a complete resource for psychiatrists, psychologists, primary care physicians, pharmacists, and nurse practitioners. Even patients and their families will find this array of products helpful in navigating the complex world of psychotropic drugs and their actions.</p>
-                    </div>
-                </div>
+                </div><!-- /text-container -->
                 
                 <div class="row feature-group">
                     
-                    <div class="span3">
-                        <a id="link-offer" href="offer.html" data-transition="slide" class="btn btn-info btn-feature btn-block btn-large" ><span class="bold">LIMITED-TIME OFFER!</span><br>Get 25% off list prices<br>of selected titles</a>
+                    <div class="span3 rwd-button">
+                        <a id="link-offer" href="offer.html" data-transition="slide" class="btn btn-info btn-feature btn-block btn-large" ><span class="rwd-line-1"><span class="bold">LIMITED-TIME OFFER!<span class="rwd-spacer-1">&nbsp;&nbsp;</span></span></span><span class="rwd-line-2">Get 25% off list prices</span><span class="rwd-line-2">of selected titles</span></a>
                     </div>
                     
-                    <div class="span3">
-                        <a id="link-video1" href="video1.html"  data-transition="slide" class="btn btn-info btn-lightbox btn-block btn-large" ><span class="lighter"><span class="bold">WATCH THE VIDEO</span></span><br>
-                            Dr. Stahl explains how<br>the products were developed</a>
+                    <div class="span3 rwd-button">
+                        <a id="link-video1" href="video1.html"  data-transition="slide" class="btn btn-info btn-lightbox btn-block btn-large" ><span class="rwd-line-1"><span class="lighter"><span class="bold">WATCH THE VIDEO<span class="rwd-spacer-1">&nbsp;&nbsp;</span></span></span></span><span class="rwd-line-2">Dr. Stahl explains how</span><span class="rwd-line-2">the products were developed</span></a>
                     </div>
                     
-                    <div class="span3">
-                        <a id="link-news" href="news.html" data-transition="slide" class="btn btn-info btn-feature btn-block btn-large" ><span class="bold">NEWS &amp; EVENTS</span><br>
-                            New edition debuts<br>at APA 2013</a>
+                    <div class="span3 rwd-button">
+                        <a id="link-news" href="news.html" data-transition="slide" class="btn btn-info btn-feature btn-block btn-large" ><span class="rwd-line-1"><span class="bold">NEWS &amp; EVENTS<span class="rwd-spacer-1">&nbsp;&nbsp;</span></span></span><span class="rwd-line-2">New edition debuts</span><span class="rwd-line-2">at APA 2013</span></a>
                     </div>
                     
-                </div>
+                </div><!-- /row -->
                                 
             </div><!-- /fluid-container -->
             
             </div><!-- /content -->
-            
-<!--
-            <div data-role="panel" id="navigation-a" class="jqm-nav-panel jqm-navmenu-panel" data-position="left" data-display="reveal" data-theme="a">
-                <ul data-role="listview" data-theme="a" data-divider-theme="a" data-icon="false" data-global-nav="demos" class="jqm-list">
-                    <li data-theme="b"><a href="#home">Home</a></li>
-                    <li><a href="#fourthedition" data-transition="slideup">Fourth Edition</a></li>
-                    <li><a href="video1.html" data-transition="slide">Video 1</a></li>
-                </ul>
-            </div>
--->
-         
-        <!-- /panel -->
             
             
             
             
         
         <!--     Header   -->
-        <div id="v-header" data-role="nav" data-position="fixed">
+        <div id="v-header" data-position="fixed">
             <a href="index.html">
                 <div id="v-branding">
                 </div></a>
             
-            <ul id="navigation" class="nav nav-pills nav-stacked span3">
+<!--            class="nav nav-pills nav-stacked span3"-->
+            
+            <ul id="navigation" data-role="listview" data-theme="c" data-icon="false" data-iconpos="false">
                 <li><a id="link-fourth-edition" href="fourth-edition.html" data-transition="fade">Fourth Edition 2013</a></li>
                 <li><a id="link-prescribers-guide" href="prescribers-guide.html">The Prescriber&rsquo;s Guide</a></li>
                 <li><a id="link-case-studies" href="case-studies.html">Case Studies</a></li>
@@ -119,8 +105,9 @@
                 <li><a id="link-related-titles" href="related-titles.html">Related titles</a></li>
             </ul>
         </div><!--/header-->
-        
-                <div data-role="panel" data-position-fixed="true" data-theme="b" id="nav-panel">
+
+        <!-- /panel -->
+     <div data-role="panel" data-position-fixed="true" data-theme="b" id="nav-panel">
         <ul data-role="listview" data-theme="a" class="nav-search">
             <li data-icon="delete" data-theme="b"><a href="#" data-rel="close">Close menu</a></li>
                 <li><a id="link-home" href="index.html" data-transition="slide">Home</a></li>
@@ -136,7 +123,8 @@
         </ul>
     </div><!-- /panel -->
 
-        
+        </div><!-- /outer-container -->
+            
         </div><!-- /page -->
   
     
