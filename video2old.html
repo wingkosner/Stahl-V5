@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-        <title>Stahl&rsquo;s Essential Psychopharmacology &#124; Video 1</title>
+        <title>Stahl&rsquo;s Essential Psychopharmacology &#124; Video 2</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <!--
 , minimum-scale=1, maximum-scale=1"/>
@@ -20,9 +20,10 @@
         
         <!-- CSS -->
         
-        <link rel="stylesheet" href="css/stahl-jqm-theme.css" type="text/css">
-        <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.1.css" type="text/css">
-
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+<!--
+        <link rel="stylesheet" href="css/jqm-demos.css" />
+-->
         <link rel="stylesheet" type="text/css" href="fonts/MyFontsWebfontsKit.css">
         <link href="css/bootstrap.css" rel="stylesheet" media="screen">
         <link href="css/stahl.css" rel="stylesheet" type="text/css">
@@ -39,14 +40,11 @@
     <body>
 
 
-  <div data-role="page" id="video1" data-theme="a">
+  <div data-role="page" id="video2" data-theme="a">
       
            <div data-role="header" data-position="fixed" data-theme="a" data-fullscreen="true">
                 <h1>Stahl Video Gallery</h1>
-            <a href="#nav-panel-v" data-icon="plus" data-iconpos="notext">Navigation</a>
-<!--
-            <a href="#video-panel" class="jqm-navmenu-link" data-icon="plus" data-iconpos="notext right">Video Galleries</a>
--->
+            <a href="#nav-panel" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
             </div><!-- /header -->
 
 
@@ -54,29 +52,31 @@
                 
                 <div class="fluid-container-video">
             
-                    <h2>Stahl’s Essential Psychopharmacology Books</h2>
+                    <div class="video-container">
+            <h1>Stahl&rsquo;s Essential Psychopharmacology</h1>
+                        <h3>Fourth Edition</h3>
                 <div class="pagination-centered video">
 
-                    <div id="embed-container">
-
-                    <iframe width="640" height="360" src="http://www.youtube.com/embed/wjTLc7mPMIs?rel=0" frameborder="0" allowfullscreen></iframe>
-                        
-                    </div>
-
-                    <p class="video-caption">Dr. Stahl explains how the suite of books in Stahl’s Essential Psychopharmacology came to be, and how they can be used in training and practice.</p>
-        
-                <a href="index.html" data-transition="fade" data-ajax="false" class="btn btn-lightbox">Back to Home</a>                
-                <a href="video2.html" data-transition="fade" data-ajax="false" class="btn btn-lightbox">Next Video</a>
+                    <iframe width="640" height="360" src="http://www.youtube.com/embed/HR2rgXm6anc?rel=0" frameborder="0" allowfullscreen></iframe>
 <!--
-data-ajax="false" 
+                    <iframe width="640" height="360" src="http://www.youtube.com/embed/wjTLc7mPMIs?rel=0" frameborder="0" allowfullscreen></iframe>
 -->
+<!--
+                    <iframe width="640" height="360" src="http://www.youtube.com/embed/wjTLc7mPMIs?list=PLTK8KRW19hUXb984fty9Pm14lonn0vdPd" frameborder="0" allowfullscreen></iframe>
+-->
+                    <p class="video-caption">Dr. Stahl explains what the book Stahl’s Essential Psychopharmacology is, and describes what is new for the fourth edition.</p>
+        
+                <a href="fourth-edition.html" data-transition="slide" class="btn btn-lightbox">Back to Fourth Edition</a>
+                <a href="video1.html" data-transition="fade" class="btn btn-lightbox">Previous Video</a>
+                <a href="video3.html" data-transition="fade" class="btn btn-lightbox">Next Video</a>
                 </div>
+                    </div><!-- /video-container -->
 
                 
                     </div><!-- /fluid-container -->
     </div><!-- /content -->
   
-    <div data-role="panel" data-position-fixed="true" data-theme="a" id="nav-panel-v">
+    <div data-role="panel" data-position-fixed="true" data-theme="a" id="nav-panel">
         <ul data-role="listview" data-theme="a" class="nav-search">
             <li data-icon="delete" data-theme="b"><a href="#" data-rel="close">Close menu</a></li>
                 <li><a id="link-home" href="index.html" data-transition="slide">Home</a></li>
@@ -91,23 +91,6 @@ data-ajax="false"
                 <li data-theme="e"><a id="link-offer" href="offer.html">Special Offer</a></li>
         </ul>
     </div><!-- /panel -->
-        
-<!--
-    <div data-role="panel" data-position="right" data-display="reveal" data-position-fixed="true" data-theme="a" id="video-panel">
-        <ul data-role="listview" data-theme="a" class="nav-search">
-            <li data-icon="delete" data-theme="e"><a href="#" data-rel="close">Close menu</a></li>
-                <li><a id="link-home" href="index.html" data-transition="slide">Home</a></li>
-                <li><a id="link-video1" href="video1.html" data-transition="slidedown">Video #1</a></li>
-                <li><a id="link-video2" href="video2.html" data-transition="slidedown">Video #2</a></li>
-                <li><a id="link-video3" href="video3.html" data-transition="slidedown">Video #3</a></li>
-                <li><a id="link-video4" href="video4.html" data-transition="slidedown">Video #4</a></li>
-                <li><a id="link-video5" href="video5.html" data-transition="slidedown">Video #5</a></li>
-                <li><a id="link-video6" href="video6.html" data-transition="slidedown">Video #6</a></li>
-                <li><a id="link-video7" href="video7.html" data-transition="slidedown">Video #7</a></li>
-        </ul>
-    </div>
--->
-      <!-- /panel -->
         
         
         

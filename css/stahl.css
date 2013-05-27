@@ -11,6 +11,7 @@ body {
 	background-color: #f6f6f6;
     overflow-x: hidden;
 	overflow-y: auto;
+    height: auto;
 }
 /*
 body {
@@ -27,9 +28,10 @@ body {
 */
 
 
-.outer-container {
+.stahl-container {
 	background-color: #f6f6f6;
-	padding-top: 100px;
+	padding-top: 50px;
+    margin-top: 0px;
 }
 .fill { 
     min-height: 100%;
@@ -39,7 +41,7 @@ body {
     padding-bottom: 50px;
 }
 #v-branding {
-	background-image: url(../assets/stahl-branding-220.png);
+	background-image: url(../assets/stahl-branding-238.png);
 	width: 238px;
 	height: 195px;
     margin-bottom: 10px:
@@ -49,7 +51,14 @@ h1 {
 	text-align: center;
 	font-size: 3.5em;
 	line-height: 0.85em;
-	margin-top: 20px;
+    margin-top: 0px;
+}
+h2 {
+	font-family: Eurostile-Reg;
+	text-align: center;
+	font-size: 2.5em;
+	line-height: 0.85em;
+    margin-top: 0px;
 }
 h3 {
 	font-family: Eurostile-RegObl;
@@ -58,11 +67,13 @@ h3 {
     margin-bottom: 20px;
 }
 .coverflow {
-	background-image: url(../assets/stahl-carousel-2a-508.jpg);
-	width: 508px;
+	background-image: url(../assets/stahl-carousel-450.jpg);
+	width: 450px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 243px;
+    margin-top: -30px;
+	height: 214px;
+    overflow-x:hidden;
 }
 .nav.nav-stacked {
 	width: 238px;
@@ -115,7 +126,7 @@ height: 16px;
 	margin-bottom: 20px;
 }
 .feature-group {
-	margin-top: 10px;
+	margin-top: 16px;
     margin-bottom: 30px;
 }
 .btn-feature {
@@ -212,12 +223,35 @@ height: 16px;
 .video-container h1 {
     margin-top: 200 px;
 }
+.video-container h2 {
+    margin-top: 50 px;
+}
+/*
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+*/
+    /* 16/9 ratio */
+/*
+    padding-top: 30px; 
+*/
+    /* IE6 workaround*/
+/*
+    height: auto;
+    overflow: hidden;
+}
+*/
+/*
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+*/
 
 /* NEW STYLES HERE */
 
 .h-header {
     height: 55px;
-    background-image: url("../assets/stahl-branding-650.png");
+    background-image: url("../assets/stahl-branding-768.png");
     background-position:center;
     background-repeat:no-repeat;
 }
@@ -228,24 +262,7 @@ height: 16px;
     margin-top: 0 !important;
 }
 
-.fluid-container {
-    width: 700px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.fluid-container-video{
-    width: 700px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 100px;
-}
-.w450 {
-    width: 450px;
-    margin-left: auto;
-	margin-right: auto;
-}
 p.video-caption {
-    width: 640px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -269,7 +286,7 @@ a#back-button.btn.ui-link {
     margin-left: auto;
 }
 h1.space-above {
-    margin-top: 100px;
+    margin-top: 50px;
 }
     .rwd-spacer-1{
         display:none;
@@ -280,316 +297,222 @@ h1.space-above {
 .ui-listview li a {
     font-family: Eurostile-Bol;
     font-size: .9em;
+}
+.ui-header > .jqm-navmenu-link.ui-btn{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 3px;
+        background-image: url(images/icons-36-white.png);
+    background-position: 	-4px -2.5px;
+    border-style:double;
 
 }
+/*
+a #h-nav-btn{
+    background-image: url(../images/icons-36-white.png);
+    background-position: 	0 50%;
+}
+*/
+.ui-content .ui-listview, .ui-panel-inner > .ui-listview.nav-panels {
+    margin-top: 0px;
+}    
+
 #v-header > .ui-li-has-arrow .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-arrow {
     padding-right: 0px !important;
 }
 
-/* docs site layout */
-
-@media all and (min-width: 650px){
-	
-    .h-header {
-     display:none;   
-    }
-    
-    
+   .rwd-line-1, .rwd-line-2 { 
+display: block; 
 }
 
-@media all and (max-width: 650px){
-	
-    #v-header {
-     display:none;   
-    }
-    
-    
+    .rwd-button {
+    width: 216px;
+    margin-right: 10px;
+padding-left: 3px;
+padding-right: 3px;
+display: inline-block;
 }
-
-/* This code is only meant for previewing your Reflow design. */
-.primaryContainer {
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 100%;
-    width: 100%;
-}
-#box1 {
-    float: left;
-    height: 609px;
-    clear: none;
-    width: 220px;
-    border-width: 1px;
-    border-style: solid;
-    background-color: rgb(255, 0, 0);
-    position: fixed;
-    top: 10px;
-    left: 0%;
-    bottom: auto;
-    z-index: 3;
-}
-#text1 {
-    float: left;
-    font-size: 1em;
-    color: rgb(0, 0, 0);
-    width: 64.85857142857144%;
-    height: auto;
-    text-align: left;
-    font-weight: normal;
-    line-height: 1em;
-    word-wrap: break-word;
-    margin-left: 0px;
-    margin-top: 279px;
-    clear: none;
-    min-height: 315px;
-    min-width: 0.5em;
+.rwd-button-last {
+    width: 212px;
     margin-right: 0px;
+display: inline-block;
 }
-#box2 {
-    float: left;
-    height: 947px;
-    margin-left: 240px;
-    margin-top: 100px;
-    clear: none;
+.fluid-container, .fluid-container-n {
     width: 700px;
     margin-right: auto;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    min-width: 20px;
-}
-#box3 {
-    float: left;
-    height: 310px;
-    margin-left: 0.43%;
-    margin-top: 276px;
-    clear: none;
-    width: 220px;
-    background-color: rgb(0, 29, 255);
-    margin-right: 20px;
-}
-#box4 {
-    float: none;
-    height: 238px;
     margin-left: auto;
-    margin-top: 85px;
-    clear: none;
-    width: 700px;
+}
+.fluid-container-video{
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 75px;
+}
+iframe {
+    width: 100%; 
+    margin: 0 20px 20px 20px; 
+}
+
+.w450 {
+    width: 450px;
+    margin-left: auto;
     margin-right: auto;
 }
-#box5 {
+#footer-nav  {
+    display: none;
+}
+.stahl-nav-active {
+    color:#74a0c5 !important;
+}
+.cover-block {
+    width=220px;
     float: left;
-    height: 140px;
-    margin-left: 0px;
-    margin-top: 49px;
-    clear: none;
-    width: 220px;
     margin-right: 20px;
-    background-color: rgb(58, 201, 168);
 }
-#box6 {
-    float: left;
-    height: 129px;
-    margin-left: 0%;
-    margin-top: 49px;
-    clear: none;
-    width: 220px;
-    margin-right: 20px;
-    background-color: rgb(33, 32, 32);
+.cover-block > a.btn {
+    display:block
 }
-#box7 {
-    float: left;
-    height: 129px;
-    margin-left: 0%;
-    margin-top: 48px;
-    clear: none;
-    width: 220px;
-    background-color: rgb(58, 201, 168);
+.book-container {
+        margin-bottom: 30px;
 }
-#reflow-378f71df-ce00-503e-cea6-8fc28336122c {
-    margin-left: 97px;
+.ui-btn-up-e, .ui-btn-up-f {
+    font-weight:normal;
+}
+.ui-btn-up-e a, .ui-btn-up-f a{
+    text-decoration:none !important;
+    font-weight:normal;
 }
 
-@media only screen and (max-width: 2184px) {
+/* RWD STYLES */
 
-   #box2 {
-        margin-left: auto;
-        float: none;
-        clear: none;
-        margin-top: 100px;
-        z-index: 0;
-        height: 1041px;
-        margin-right: auto;
-   }
-   #box4 {
-        float: none;
-        height: 238px;
-        margin-left: auto;
-        margin-top: 772px;
-        clear: none;
+
+
+@media screen and (max-width: 1200px) {
+
+   .fluid-container {
         width: 700px;
-        margin-right: auto;
-   }
-   #box5 {
-        float: left;
-        height: 140px;
-        margin-left: 0px;
-        margin-top: 49px;
-        clear: none;
-        width: 220px;
-        margin-right: 20px;
-        background-color: rgb(58, 201, 168);
-   }
-   #box6 {
-        float: left;
-        height: 129px;
-        margin-left: 0%;
-        margin-top: 49px;
-        clear: none;
-        width: 220px;
-        margin-right: 20px;
-        background-color: rgb(33, 32, 32);
-   }
-   #box7 {
-        float: left;
-        height: 129px;
-        margin-left: 0%;
-        margin-top: 48px;
-        clear: none;
-        width: 220px;
-        background-color: rgb(58, 201, 168);
-   }
-   #reflow-378f71df-ce00-503e-cea6-8fc28336122c {
-        margin-left: 97px;
-   }
-   #box3 {
-        margin-top: 276px;
-        margin-left: 0%;
-        clear: none;
-   }
-   #text1 {
-        margin-top: 279px;
-        margin-left: 0%;
-        clear: none;
-        width: 460px;
-        min-width: 0px;
-   }
-}
-@media only screen and (max-width: 1180px) {
-
-   #box2 {
         margin-left: 260px;
-        margin-right: 0px;
-        float: left;
-        clear: none;
-        margin-top: 100px;
-        height: 984px;
-        min-width: 40px;
-   }
-   #box4 {
-        margin-top: 744px;
-        margin-left: auto;
-        clear: none;
-        float: none;
-        width: 100%;
         margin-right: auto;
+     
    }
-}
-@media only screen and (max-width: 1000px) {
-
-   #text1 {
-        margin-top: 34px;
-        margin-left: auto;
-        clear: none;
-        height: auto;
-        min-height: 0px;
-        width: 100%;
-        margin-right: auto;
-        float: none;
-   }
-   .fluid-container {
-        width: auto;
-        margin-left: 250px;
-        margin-right: 30px;
-   }
-   #box3 {
-        margin-top: 250px;
-        margin-left: auto;
-        clear: none;
-        margin-right: auto;
-        float: none;
-   }
-   #box4 {
-        margin-top: 80px;
-        margin-left: auto;
-        clear: none;
-        width: 98.83187134502924%;
-        position: relative;
-        top: 0px;
-        left: 0px;
-        height: 498px;
-        float: none;
-        margin-right: auto;
-   }
-   #box5 {
-        width: 100%;
-        height: 60px;
-        margin: 1px auto 20px;
-        float: none;
-        clear: none;
-   }
-   #box6 {
-        width: 100%;
-        height: 61px;
-        margin: 0px auto 20px;
-        clear: none;
-        float: none;
-   }
-   #box7 {
-        width: 100%;
-        height: 60px;
-        margin-top: 0px;
-        margin-left: auto;
-        clear: none;
-        float: none;
-        margin-right: auto;
-   }
-}
-@media only screen and (max-width: 650px) {
-
-   #box1 {
-        display: none;
-   }
-   .fluid-container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 85%;
-   }
-   #box4 {
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-        clear: none;
-        width: 85%;
-   }
-    
+    .fluid-container-video{
+    width: 50%;
+    margin-top: 75px;
 }
 
-    .rwd-line-1, .rwd-line-2 { 
-    display: block; 
 }
-        
+
 @media screen and (max-width: 1000px) {
     
+   .fluid-container {
+        width: auto;
+        margin-left: 270px;
+        margin-right: 30px;
+   }
+    .fluid-container-video{
+    width: 60%;
+    margin-top: 75px;
+}
     .rwd-line-1, .rwd-line-2 { 
         display: inline; 
     }
-    .rwd-button {
+    .rwd-button, .rwd-button-last {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 2px;
     }
     .rwd-spacer-1{
         display:inline;
     }    
+    .book-container {
+        margin-bottom: 20px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+   .fluid-container, .fluid-container-n {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+   }
+    .fluid-container-video{
+    width: 85%;
+    margin-top: 50px;
+}
+    #v-header {
+     display:none;   
+    }   
+    h1. {
+    margin-top: 20px;
+    }
+   #footer-nav  {
+        display:block;
+    }
+}
+        
+@media all and (min-width: 769px){
+	
+    .h-header {
+     display:none;   
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .coverflow {
+        background-image: url(../assets/stahl-carousel-390.jpg);
+        width: 390px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -30px;
+        height: 214px;
+        overflow-x:hidden;
+    }
+    h1 {
+        font-size: 3em;
+        line-height: 0.85em;
+        margin-top: 20px;
+    }
+    h3 {
+        font-size: 1.65em;
+        margin-bottom: 20px;
+        margin-top: -5px;
+    }
+    .cover-block {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cover-block > a.btn {
+        width:200px;
+        margin-left: auto;
+        margin-right: auto;
+
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .coverflow {
+        background-image: url(../assets/stahl-carousel-355.jpg);
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -30px;
+        height: 214px;
+        overflow-x:hidden;
+    }
+        h1 {
+        font-size: 2.5em;
+        line-height: 0.85em;
+        margin-top: 20px;
+    }
+    h3 {
+        font-size: 1.35em;
+        margin-bottom: 20px;
+        margin-top: -10px;
+    }
 
 }

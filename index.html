@@ -20,7 +20,9 @@
         
         <!-- CSS -->
         
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <link rel="stylesheet" href="css/stahl-jqm-theme.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.1.css" type="text/css">
+
 <!--
         <link rel="stylesheet" href="css/jqm-demos.css" />
 -->
@@ -43,11 +45,13 @@
         
         <div data-role="page" id="home">
             
-            <div class="outer-container">
+<!--
+            <div class="stahl-container">
+-->
             
             <div data-role="header" class="h-header" data-position="fixed" data-theme="a" data-fullscreen="false">
                 <h1></h1>
-            <a href="#nav-panel" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext" data-theme="c">Navigation</a>
+            <a href="#nav-panel" id="h-nav-btn" class="jqm-navmenu-link" data-iconpos="notext" data-theme="d">Navigation</a>
 
             </div><!-- /header -->
             
@@ -62,40 +66,47 @@
                         <p><em>Stahl&rsquo;s Essential Psychopharmacology</em> is a suite of products that began some 20 years ago as a published offshoot of Dr. Stahl’s lectures about disease mechanisms and drug actions. Consisting of not only a range of books but also an online service, a journal, and related CME, it is a complete resource for psychiatrists, psychologists, primary care physicians, pharmacists, and nurse practitioners. Even patients and their families will find this array of products helpful in navigating the complex world of psychotropic drugs and their actions.</p>
                 </div><!-- /text-container -->
                 
-                <div class="row feature-group">
+                <div class="feature-group">
                     
-                    <div class="span3 rwd-button">
-                        <a id="link-offer" href="offer.html" data-transition="slide" class="btn btn-info btn-feature btn-block btn-large" ><span class="rwd-line-1"><span class="bold">LIMITED-TIME OFFER!<span class="rwd-spacer-1">&nbsp;&nbsp;</span></span></span><span class="rwd-line-2">Get 25% off list prices</span><span class="rwd-line-2">of selected titles</span></a>
+                    <div class="rwd-button">
+                        <a id="link-offer" href="offer.html" data-transition="slide" data-role="button" data-theme="f"><span class="rwd-line-1"><span class="bold">LIMITED-TIME OFFER!<span class="rwd-spacer-1">&nbsp;&nbsp;</span></span></span><span class="rwd-line-2">Get 25% off list prices<span class="spacer-1">&nbsp;</span></span><span class="rwd-line-2">of selected titles</span></a>
                     </div>
                     
-                    <div class="span3 rwd-button">
-                        <a id="link-video1" href="video1.html"  data-transition="slide" class="btn btn-info btn-lightbox btn-block btn-large" ><span class="rwd-line-1"><span class="lighter"><span class="bold">WATCH THE VIDEO<span class="rwd-spacer-1">&nbsp;&nbsp;</span></span></span></span><span class="rwd-line-2">Dr. Stahl explains how</span><span class="rwd-line-2">the products were developed</span></a>
+                    <div class="rwd-button">
+                        <a id="link-video1" href="video1.html"  data-transition="slide" data-role="button" data-theme="a"><span class="lighter"><span class="rwd-line-1"><span class="bold">WATCH THE VIDEO<span class="rwd-spacer-1">&nbsp;&nbsp;</span></span></span><span class="rwd-line-2">Dr. Stahl explains how<span class="spacer-1">&nbsp;&nbsp;</span></span><span class="rwd-line-2">the range  developed</span></span></a>
                     </div>
                     
-                    <div class="span3 rwd-button">
-                        <a id="link-news" href="news.html" data-transition="slide" class="btn btn-info btn-feature btn-block btn-large" ><span class="rwd-line-1"><span class="bold">NEWS &amp; EVENTS<span class="rwd-spacer-1">&nbsp;&nbsp;</span></span></span><span class="rwd-line-2">New edition debuts</span><span class="rwd-line-2">at APA 2013</span></a>
+                    <div class="rwd-button-last">
+                        <a id="link-news" href="news.html" data-transition="slide" data-role="button" data-theme="f"><span class="rwd-line-1"><span class="bold">NEWS &amp; EVENTS<span class="rwd-spacer-1">&nbsp;&nbsp;</span></span></span><span class="rwd-line-2">New edition debuts<span class="rwd-spacer-1">&nbsp;</span></span><span class="rwd-line-2">at APA 2013</span></a>
                     </div>
+                
+                <div class="rwd-button">
+                        <a id="footer-nav" href="#nav-panel" id="h-nav-btn" class="btn btn-block btn-large" data-iconpos="notext" data-theme="d">Full Site Navigation</a>
+                    </div>
+
+                    </div><!-- /row -->
                     
-                </div><!-- /row -->
+
                                 
             </div><!-- /fluid-container -->
             
             </div><!-- /content -->
             
             
-            
+<!--
+                    </div>
+-->
+            <!-- /stahl-container -->
+
             
         
         <!--     Header   -->
         <div id="v-header" data-position="fixed">
-            <a href="index.html">
+            <a href="index.html" data-transition="slide">
                 <div id="v-branding">
                 </div></a>
-            
-<!--            class="nav nav-pills nav-stacked span3"-->
-            
-            <ul id="navigation" data-role="listview" data-theme="c" data-icon="false" data-iconpos="false">
-                <li><a id="link-fourth-edition" href="fourth-edition.html" data-transition="fade">Fourth Edition 2013</a></li>
+                        
+            <ul id="stahl-navigation" data-role="listview" data-theme="c" data-icon="false" data-iconpos="false">                                   <li><a id="link-fourth-edition" href="fourth-edition.html" data-transition="slide">Fourth Edition 2013</a></li>
                 <li><a id="link-prescribers-guide" href="prescribers-guide.html">The Prescriber&rsquo;s Guide</a></li>
                 <li><a id="link-case-studies" href="case-studies.html">Case Studies</a></li>
                 <li><a id="link-self-assessment" href="self-assessment.html">Self-Assessment Examination</a></li>
@@ -104,11 +115,12 @@
                 <li><a id="link-cns-spectrums" href="cns-spectrums.html">CNS Spectrums</a></li>
                 <li><a id="link-related-titles" href="related-titles.html">Related titles</a></li>
             </ul>
-        </div><!--/header-->
+        </div>
+            <!--/header-->
 
         <!-- /panel -->
-     <div data-role="panel" data-position-fixed="true" data-theme="b" id="nav-panel">
-        <ul data-role="listview" data-theme="a" class="nav-search">
+     <div data-role="panel" data-position-fixed="true" data-theme="c" id="nav-panel">
+        <ul data-role="listview" class="nav-panels" data-theme="c" >
             <li data-icon="delete" data-theme="b"><a href="#" data-rel="close">Close menu</a></li>
                 <li><a id="link-home" href="index.html" data-transition="slide">Home</a></li>
                 <li><a id="link-fourth-edition" href="fourth-edition.html" data-transition="slide">Fourth Edition 2013</a></li>
@@ -119,11 +131,10 @@
                 <li><a id="link-stahls-online" href="stahls-online.html">Stahl&rsquo;s Online</a></li>
                 <li><a id="link-cns-spectrums" href="cns-spectrums.html">CNS Spectrums</a></li>
                 <li><a id="link-related-titles" href="related-titles.html">Related titles</a></li>
-                <li data-theme="e"><a id="link-offer" href="offer.html">Special Offer</a></li>
+                <li data-theme="d"><a id="link-offer" href="offer.html">Special Offer</a></li>
         </ul>
     </div><!-- /panel -->
 
-        </div><!-- /outer-container -->
             
         </div><!-- /page -->
   

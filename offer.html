@@ -20,7 +20,9 @@
         
         <!-- CSS -->
         
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <link rel="stylesheet" href="css/stahl-jqm-theme.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.1.css" type="text/css">
+
 <!--
         <link rel="stylesheet" href="css/jqm-demos.css" />
 -->
@@ -45,7 +47,7 @@
             
            <div data-role="header" data-position="fixed" data-theme="b" data-fullscreen="true">
                 <h1>Stahl&rsquo;s Essential Psychopharmacology &#124; Special Offer</h1>
-            <a href="#nav-panel" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
+            <a href="#nav-panel-o"  data-icon="plus" data-iconpos="notext">Navigation</a>
 <!--
             <a href="#video-panel" class="jqm-navmenu-link" data-icon="plus" data-iconpos="notext right">Video Galleries</a>
 -->
@@ -59,15 +61,18 @@
             <h1 class="space-above">Limited Time Offer!</h1>
             <h3> Stay informed on all things Stahl and save big!</h3>
             <div class="coverflow"></div>
-                    <div class="w450">
-<p>                    Want to save money and stay up to date with what’s new in the <em>Stahl’s Essential Psychopharmacology</em> suite of products?
-</p> 
-<p>For a limited time only—until June 30, 2013—we are celebrating the release of the new edition of <em>Stahl’s Essential Psychopharmacology</em> by offering a fantastic discount deal on all the other books in the range. By becoming a subscriber to our update service you will be entitled to a 25% discount off the list prices!
-</p> 
+                <div class="text-container">
+<p>Want to save money and stay up to date with what’s new in the <em>Stahl’s Essential Psychopharmacology</em> suite of products?</p> 
+<p>For a limited time only—until June 30, 2013—we are celebrating the release of the new edition of <em>Stahl’s Essential Psychopharmacology</em> by offering a fantastic discount deal on all the other books in the range. By becoming a subscriber to our update service you will be entitled to a <strong>25% discount off the list prices!</strong></p> 
 <p>Just enter your email address below. We’ll immediately email you back with a promotion code that you can use to redeem your discount when ordering from our online bookstore. You’ll also receive periodic news, updates, and details of future special offers from Cambridge Medicine!</p>
                         </div>
+
+                    
+                    
                 <div class="email-input ">
-                    <!-- BEGIN: Constant Contact Basic Opt-in Email List Form -->
+<!--
+                     BEGIN: Constant Contact Basic Opt-in Email List Form 
+-->
                     <div align="center">
                     <table border="0" cellspacing="0" cellpadding="3" bgcolor="#ffffcc" style="border:0px solid #000000;">
                     <tr>
@@ -83,6 +88,7 @@
                     </tr>
                     </table>
                     </div>
+
                     <!-- END: Constant Contact Basic Opt-in Email List Form -->
                     <!-- BEGIN: SafeSubscribe -->
                     <!--
@@ -102,7 +108,7 @@
 -->
                     <!-- END: Email Marketing you can trust -->
                 </div>
-            <div class="pagination-centered feature-group"><a href="previous.html" onClick="history.back();return false;" id="back-button" class="btn feature-group" data-role="button" data-theme="b" data-mini="true">GO BACK</a></div>
+            <div class="pagination-centered"><a href="previous.html" onClick="history.back();return false;" id="back-button" class="btn feature-group" data-role="button" data-theme="b" data-mini="true">GO BACK</a></div>
                     
                     
 <!--
@@ -113,7 +119,7 @@
             
             </div><!-- /content -->
 
-                <div data-role="panel" data-position-fixed="true" data-theme="b" id="nav-panel">
+                <div data-role="panel" data-position-fixed="true" data-theme="b" id="nav-panel-o">
         <ul data-role="listview" data-theme="a" class="nav-search">
             <li data-icon="delete" data-theme="b"><a href="#" data-rel="close">Close menu</a></li>
                 <li><a id="link-home" href="index.html" data-transition="slide">Home</a></li>

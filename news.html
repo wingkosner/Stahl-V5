@@ -20,7 +20,9 @@
         
         <!-- CSS -->
         
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <link rel="stylesheet" href="css/stahl-jqm-theme.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.1.css" type="text/css">
+
 <!--
         <link rel="stylesheet" href="css/jqm-demos.css" />
 -->
@@ -45,7 +47,7 @@
             
            <div data-role="header" data-position="fixed" data-theme="b" data-fullscreen="true">
                 <h1>Stahl&rsquo;s Essential Psychopharmacology &#124; News &amp; Events</h1>
-            <a href="#nav-panel" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
+            <a href="#nav-panel-n"  data-icon="plus" data-iconpos="notext">Navigation</a>
 <!--
             <a href="#video-panel" class="jqm-navmenu-link" data-icon="plus" data-iconpos="notext right">Video Galleries</a>
 -->
@@ -54,15 +56,14 @@
                         
             <div data-role="content">
                 
-                <div class="fluid-container">
+                <div class="fluid-container-n">
                         
             <h1 class="space-above">American Psychiatric Association Annual Meeting</h1>
             <div class="row">
                 <div class="feature-image pagination-centered"><img src="/assets/American-Psychiatric-Association-Annual-Meeting-300.jpg">
                 </div>
             </div>
-            <div class="row">
-                <div class="span9 pagination-centered">
+                <div class="text-container pagination-centered">
                     <p><em>Stahl’s Essential Psychopharmacology, Fourth Edition</em> debuts at this year’s<br><a href="http://annualmeeting.psychiatry.org/">American Psychiatric Association Annual Meeting</a> on May 18-21 in San Francisco!</p>
                     <p>Visit Cambridge University Press at Booth 1805 to pick up your copy and meet Dr. Stahl!</p>
 
@@ -75,9 +76,8 @@ May 20: 10:00am-12:00pm</p>
 
 <p>See you there!</p>
                 </div>
-            </div>
 
-            <div class="pagination-centered feature-group"><a href="previous.html" onClick="history.back();return false;" id="back-button" class="btn feature-group" data-role="button" data-theme="b" data-mini="true">GO BACK</a></div>
+            <div class="pagination-centered"><a href="previous.html" onClick="history.back();return false;" id="back-button" class="btn feature-group" data-role="button" data-theme="b" data-mini="true">GO BACK</a></div>
                     
                     
                                 
@@ -85,7 +85,7 @@ May 20: 10:00am-12:00pm</p>
             
             </div><!-- /content -->
 
-                <div data-role="panel" data-position-fixed="true" data-theme="b" id="nav-panel">
+                <div data-role="panel" data-position-fixed="true" data-theme="b" id="nav-panel-n">
         <ul data-role="listview" data-theme="a" class="nav-search">
             <li data-icon="delete" data-theme="b"><a href="#" data-rel="close">Close menu</a></li>
                 <li><a id="link-home" href="index.html" data-transition="slide">Home</a></li>
