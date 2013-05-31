@@ -204,6 +204,8 @@ height: 16px;
 p.video-caption {
     margin-right: auto;
     margin-left: auto;
+    margin-top:30px;
+
 }
 li a.active {
     color: #333333 !important;
@@ -216,7 +218,7 @@ a.btn-success.ui-link {
 }
 
 .email-input {
-    width: 240px;
+    width: 500px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -278,9 +280,12 @@ display: inline-block;
     margin-left: auto;
     margin-top: 75px;
 }
+#embed-container{
+
+}
 iframe {
     width: 100%; 
-    margin: 0 20px 20px 20px; 
+    margin: 0 20px 00px 20px; 
 }
 
 .w450 {
@@ -336,6 +341,19 @@ iframe {
     margin-bottom: 20px;
     width: 200px;
     height: 302px;
+}
+#email {
+    float: left;
+    display: inline;
+    width: 240px;
+    margin-top: 0px;
+}
+
+#submit {
+    float: right;
+    display: inline;
+    margin-top: 6px;
+
 }
 /* RWD STYLES */
 
@@ -437,7 +455,7 @@ iframe {
         margin-bottom: 20px;
         margin-top: -5px;
     }
-    .cover-block {
+   .cover-block {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -457,22 +475,37 @@ iframe {
 
 @media screen and (max-width: 480px) {
 
-    .coverflow {
-        background-image: url(../assets/stahl-carousel-355.jpg);
-        width: 350px;
+    .fluid-container, .fluid-container-n {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+   }
+    h1 {
+        font-size: 2.25em;
+        line-height: 0.85em;
+        margin-top: 40px;
+    }
+    h3 {
+        font-size: 1.25em;
+        margin-bottom: 20px;
+        margin-top: -5px;
+    }
+
+.coverflow {
+        background-image: url(../assets/stahl-carousel-300.jpg);
+        width: 300px;
         margin-left: auto;
         margin-right: auto;
         margin-top: -30px;
-        height: 214px;
-        overflow-x:hidden;
+        height: 181px;
     }
         h1 {
-        font-size: 2.5em;
+        font-size: 2em;
         line-height: 0.85em;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     h3 {
-        font-size: 1.35em;
+        font-size: 1.25em;
         margin-bottom: 20px;
         margin-top: -10px;
     }

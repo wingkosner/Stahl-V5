@@ -1,3 +1,4 @@
+<<<<<<< HEAD
        // By Chris Coyier & tweaked by Mathias Bynens
 
 $(function() {
@@ -40,3 +41,8 @@ $(function() {
 	}).resize();
 
 });
+=======
+/*!
+* Empty, waiting for new functions
+*/
+>>>>>>> final V6
