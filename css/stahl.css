@@ -299,6 +299,17 @@ iframe {
 .stahl-nav-active {
     color:#74a0c5 !important;
 }
+.ui-btn-active {
+    background-color:#ffffff;
+	text-shadow: 0 /*{c-bup-shadow-x}*/ 0 /*{c-bup-shadow-y}*/ 0 /*{c-bup-shadow-radius}*/ #ffffff /*{c-bup-shadow-color}*/;
+background-image: -webkit-gradient(linear, left top, left bottom, from( #ffffff /*{c-bup-background-start}*/), to( #f1f1f1 /*{c-bup-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/);
+    border-top-color: #cccccc;
+}
 .cover-block {
     width=220px;
     float: left;
@@ -355,6 +366,43 @@ iframe {
     margin-top: 6px;
 
 }
+
+#home.ui-page.ui-body-c.ui-page-header-fixed.ui-page-footer-fixed.ui-page-panel.ui-page-active, 
+#fourth-edition.ui-page.ui-body-c.ui-page-header-fixed.ui-page-footer-fixed.ui-page-panel.ui-page-active,
+#prescribers-guide.ui-page.ui-body-c.ui-page-header-fixed.ui-page-footer-fixed.ui-page-panel.ui-page-active,
+#case-studies.ui-page.ui-body-c.ui-page-header-fixed.ui-page-footer-fixed.ui-page-panel.ui-page-active,
+#self-assessment.ui-page.ui-body-c.ui-page-header-fixed.ui-page-footer-fixed.ui-page-panel.ui-page-active,
+#illustrated-series.ui-page.ui-body-c.ui-page-header-fixed.ui-page-footer-fixed.ui-page-panel.ui-page-active,
+#stahls-online.ui-page.ui-body-c.ui-page-header-fixed.ui-page-footer-fixed.ui-page-panel.ui-page-active,
+#cns-spectrums.ui-page.ui-body-c.ui-page-header-fixed.ui-page-footer-fixed.ui-page-panel.ui-page-active,
+#related-titles.ui-page.ui-body-c.ui-page-header-fixed.ui-page-footer-fixed.ui-page-panel.ui-page-active {
+    padding-bottom: 0px !important;
+}
+
+.ui-header {
+    margin-top: 0px !important;
+}
+
+#nav-panel-o {
+    margin-top: 55px !important;
+}
+
+.ui-icon-plus {
+	background-position: 	0px 0px;
+    color:#555555;
+}
+
+.ui-icon-delete {
+	background-position: 	-72px 0px;
+    color:#555555;
+}
+
+.ui-icon-arrow-r {
+	background-position: 	-107px 0px;
+    color:#555555;
+}
+
+
 /* RWD STYLES */
 
 

@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-       // By Chris Coyier & tweaked by Mathias Bynens
+   // By Chris Coyier & tweaked by Mathias Bynens
 
 $(function() {
 
@@ -41,8 +40,14 @@ $(function() {
 	}).resize();
 
 });
-=======
-/*!
-* Empty, waiting for new functions
-*/
->>>>>>> final V6
+
+globalNav('https://www.cambridge.org/tools/packages/cambridge_themes/global_navigation',
+{ locale: 'en_US',locationChangeLink:''},
+function(resp) {
+$('#global-nav').html(resp);
+$(".open").pageslide();
+$(".open").click(function() {
+    $(this).toggleClass('globalnav_close');
+})
+},
+"html", 5000);
